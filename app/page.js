@@ -264,7 +264,7 @@ export default class Ho extends Component{
                           }
                       }}>{'>'}</button>
                      <button onClick={()=>{ this.setState({set: 'choose2'})}}
-                      className="bg-blue-950 absolute -bottom-96 left-2/4 -translate-x-2/4 hover:bg-sky-400 hover:text-slate-950 w-20 border-solid mx-8 my-2 border-sky-600 border-2" id='ol'>start</button>
+                      className="bg-blue-950 absolute -bottom-2/4 left-2/4 -translate-x-2/4 hover:bg-sky-400 hover:text-slate-950 w-20 border-solid mx-8 my-2 border-sky-600 border-2" id='ol'>start</button>
                 </div> 
           </div>
         )
@@ -283,7 +283,7 @@ export default class Ho extends Component{
         )
       case 'kazu':
         return (
-          <div className='bg-jjkbg5 bg-center bg-no-repeat h-screen bg-cover'>
+          <div className='bg-jjkbg4 bg-center bg-no-repeat h-screen bg-cover'>
             <Image id='q' alt="k" className=' z-1 w-100 h-full bg-cover bg-center bg-no-repeat absolute z-0 left-2/4 top-3/4 -translate-x-2/4 -translate-y-2/4' width={500} height={1000} src={this.state.im === ''?gojo32:gojo1} />
             <div id='c' className={this.state.dialog}>
                      <p id='d' className="text-center text-xl text-black font-bold mx-11">gojo: the sun has set and we have to turn them all off before sun rise ...or else</p>
@@ -302,7 +302,7 @@ export default class Ho extends Component{
         )
         case 'kazu p':
           return (
-            <div className='bg-jjkbg5 bg-center bg-no-repeat h-screen bg-cover'>
+            <div className='bg-jjkbg4 bg-center bg-no-repeat h-screen bg-cover'>
                {this.state.im == 'kl'? <><Yi2 lo={()=>{this.setState({set: "lost"})}} ko={()=>{
               this.setState({set: 'choose2',kazu: 'clear',num2: 0})
               }} /></>:<></>}
@@ -310,7 +310,7 @@ export default class Ho extends Component{
           )
       case 'shibuya':
         return (
-          <div className='bg-jjkbg4 bg-center bg-no-repeat h-screen bg-cover'>
+          <div className='bg-jjkbg5 bg-center bg-no-repeat h-screen bg-cover'>
             <Image id='q' alt="k" className=' z-1 w-100 h-full bg-cover bg-center bg-no-repeat absolute z-0 left-2/4 top-3/4 -translate-x-2/4 -translate-y-2/4' width={500} height={1000} src={this.state.im === ''?gojo32:gojo1} />
             <div id='c' className={this.state.dialog}>
                      <p id='d' className="text-center text-xl text-black font-bold mx-11">gojo: the sun has set and we have to turn them all off before sun rise ...or else</p>
@@ -330,7 +330,7 @@ export default class Ho extends Component{
       case 'shibuya p':
         return (
           <div>
-            <div className='bg-jjkbg4 bg-center bg-no-repeat h-screen bg-cover'>
+            <div className='bg-jjkbg5 bg-center bg-no-repeat h-screen bg-cover'>
                {this.state.im == 'kl'? <><Yi3 lo={()=>{this.setState({set: "lost"})}} ko={()=>{
               this.setState({set: 'suprise',kazu: 'clear',num2: 0})
               }} /></>:<></>}
