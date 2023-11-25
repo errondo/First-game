@@ -347,7 +347,7 @@ export default class Ho extends Component{
         )
       case 'suprise':
         return (
-          <div id='sup' className='bg-jjkbg6 bg-center bg-no-repeat h-screen bg-cover'>
+          <div id='sup' className='bg-jjkbg7 bg-center bg-no-repeat h-screen bg-cover'>
             <Image id='q' alt="k" className=' z-1 w-100 h-full bg-cover bg-center bg-no-repeat absolute z-0 left-2/4 top-3/4 -translate-x-2/4 -translate-y-2/4' width={500} height={1000} src={this.state.im == 'no'?gojo4:gojo32}/>
             <div id='c' className={this.state.dialog}>
                      <p id='d' className="text-center text-xl text-[#ffff] font-bold mx-11">gojo: I didn't expect you to finish it off this easily, i guess he was just weaker than you</p>
