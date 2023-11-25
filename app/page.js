@@ -4,7 +4,8 @@ import { render } from 'react-dom'
 import Home from "./home"
 import Image from "next/image";
 import gojo32 from './ppl/gojo3.png';
-import gojo1 from './ppl/gojo1.png'
+import gojo1 from './ppl/gojo1.png';
+import gojo4 from './ppl/gojo4.png';
 import  Yi  from "./Yi.js";
 import Yi2 from './game2';
 import Yi3 from './hi';
@@ -117,7 +118,7 @@ export default class Ho extends Component{
     'gojo: now that we have succefully stopped the special grade curse from appearing, we can start our special mission now',
     `${name2}: so what is this mission about?`,
     function uv6(){document.getElementById('sup').setAttribute('class','bg-center bg-no-repeat h-screen bg-cover')
-    document.getElementById('q').setAttribute('src', '')
+    document.getElementById('q').setAttribute('src', gojo4)
   },
     `${name2}: uuum?... hello?..  who turned off the light?`,
     `${name2}: anybody here?`,
