@@ -4,7 +4,7 @@ export default class Yi extends Component {
     super(props);
     this.state = {
       clickCount: 0,
-      toWin: 90, 
+      toWin: 70, 
       timer: 60,
       btn: 0,
       pause: 'continue',
