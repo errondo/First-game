@@ -116,7 +116,9 @@ export default class Ho extends Component{
     'gojo: ow uhh never mind',
     'gojo: now that we have succefully stopped the special grade curse from appearing, we can start our special mission now',
     `${name2}: so what is this mission about?`,
-    function uv6(){document.getElementById('sup').setAttribute('class','bg-center bg-no-repeat h-screen bg-cover')},
+    function uv6(){document.getElementById('sup').setAttribute('class','bg-center bg-no-repeat h-screen bg-cover')
+    document.getElementById('q').setAttribute('src', '')
+  },
     `${name2}: uuum?... hello?..  who turned off the light?`,
     `${name2}: anybody here?`,
     '**something crashes**',
@@ -124,6 +126,7 @@ export default class Ho extends Component{
     `${name2}: where does this gojo guy disapear when he is needed?`,
     function uv7(){
       document.getElementById('sup').setAttribute('class','bg-jjkbg7 bg-center bg-no-repeat h-screen bg-cover')
+      document.getElementById('q').setAttribute('src', gojo32)
     }
   ]
    const num = 0
@@ -340,6 +343,7 @@ export default class Ho extends Component{
       case 'suprise':
         return (
           <div id='sup' className='bg-jjkbg6 bg-center bg-no-repeat h-screen bg-cover'>
+            <Image id='q' alt="k" className=' z-1 w-100 h-full bg-cover bg-center bg-no-repeat absolute z-0 left-2/4 top-3/4 -translate-x-2/4 -translate-y-2/4' width={500} height={1000} src={this.state.im === ''?gojo32:gojo1}/>
             <div id='c' className={this.state.dialog}>
                      <p id='d' className="text-center text-xl text-[#ffff] font-bold mx-11">gojo: I didn't expect you to finish it off this easily, i guess he was just waeker than you</p>
                      <button className="bg-blue-950 absolute bottom-12 left-3/4 -translate-x-2/4 hover:bg-sky-400 hover:text-slate-950 w-20 border-solid mx-8 my-2 border-sky-600 border-2" id='yu' onClick={()=>{
