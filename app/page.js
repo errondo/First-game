@@ -68,7 +68,7 @@ export default class Ho extends Component{
    const name = this.state.name[this.state.num]
    const name2 = this.state.name
    const dialogs1 = [
-   `${name2} : what mission?! and why me!? and how do you know my name!?`,
+   `${name2} : what mission?! and why me!? why are you putting this burden on me , you old man ?!`,
    'gojo: forget about those details, you will understand soon enough, so let\'s hurry up choose the location to start our mission, shall we?',
    function choose(){
     document.getElementById('k').setAttribute("class", "bg-blue-950 absolute bottom-12 left-2/4 -translate-x-2/4 animate-[show2_1s_ease-in-out] hover:bg-sky-400 hover:text-slate-950 w-20 border-solid mx-8 my-2 border-sky-600 border-2")
@@ -87,8 +87,8 @@ export default class Ho extends Component{
   ]
   const dialogs4 = [
     `${name2}: welcome back? it\'s literaly my first time in a supernatural cursed beacon with a handsome curse killing machine`,
-    'beacon: the beacon is currently enadled, if you want to disable this beacon proceede by playing the minigame that will be presented on the screen once you are ready',
-    'beacon: this minigame you are about to play has a timer of one minute, and what you have to do is to hit the randomly appearing buttons before they disappear again',
+    'beacon: the beacon is currently enadled, if you want to disable this beacon proceede by playing the game that will be presented on the screen once you are ready',
+    'beacon: this game you are about to play has a timer of one minute, and what you have to do is to click the randomly appearing buttons before they get locked again',
     'beacon: so are you ready?',
     function uv2(){document.getElementById('l').setAttribute('class','bg-blue-950 absolute bottom-12 left-2/4 -translate-x-2/4 animate-[show2_1s_ease-in-out] hover:bg-sky-400 hover:text-slate-950 w-20 border-solid mx-8 my-2 border-sky-600 border-2')}
   ]
