@@ -13,7 +13,7 @@ export default class Ho extends Component{
   constructor(props){
       super(props)
       this.state = {
-        set: 'suprise', //was true
+        set: true, 
         pro1: '',
         pro2: '',
         pro4: '',
@@ -124,9 +124,15 @@ export default class Ho extends Component{
     `${name2}: WHOSE THERE!!?`,
     `${name2}: where does this gojo guy disapear when he is needed?`,
     function uv7(){
-      document.getElementById('sup').setAttribute('class','bg-jjkbg7 bg-center bg-no-repeat h-screen bg-cover')
-      document.getElementById('q').setAttribute('src', gojo32)
-    }
+      document.getElementById('sup').setAttribute('class','bg-jjkbg6 bg-center bg-no-repeat h-screen bg-cover')
+    },
+    'gojo & others in the back ground: SUPRIZE!!',
+    `${name2}: that scared the hell out of me`,
+    `${name2}: who told you it's my birth day today anyway`,
+    "gojo: that info stays a secret, ok",
+    "gojo: now let's celebrate your bithday!!",
+    `narrator: and so ${name2}${this.state.pro4} and others in the jujutsu high celebrated ${this.state.pro2} birth day`,
+    function uv8(){document.getElementById('ol').setAttribute('class','bg-blue-950 absolute bottom-12 left-2/4 -translate-x-2/4 animate-[show2_1s_ease-in-out] hover:bg-sky-400 hover:text-slate-950 w-20 border-solid mx-8 my-2 border-sky-600 border-2')}
   ]
    const num = 0
       switch(this.state.set){
@@ -342,19 +348,25 @@ export default class Ho extends Component{
       case 'suprise':
         return (
           <div id='sup' className='bg-jjkbg6 bg-center bg-no-repeat h-screen bg-cover'>
-            <Image id='q' alt="k" className=' z-1 w-100 h-full bg-cover bg-center bg-no-repeat absolute z-0 left-2/4 top-3/4 -translate-x-2/4 -translate-y-2/4' width={500} height={1000} src={document.getElementById('sup').class === 'bg-center bg-no-repeat h-screen bg-cover'?gojo4:gojo32}/>
+            <Image id='q' alt="k" className=' z-1 w-100 h-full bg-cover bg-center bg-no-repeat absolute z-0 left-2/4 top-3/4 -translate-x-2/4 -translate-y-2/4' width={500} height={1000} src={this.state.im == 'no'?gojo4:gojo32}/>
             <div id='c' className={this.state.dialog}>
-                     <p id='d' className="text-center text-xl text-[#ffff] font-bold mx-11">gojo: I didn't expect you to finish it off this easily, i guess he was just waeker than you</p>
+                     <p id='d' className="text-center text-xl text-[#ffff] font-bold mx-11">gojo: I didn't expect you to finish it off this easily, i guess he was just weaker than you</p>
                      <button className="bg-blue-950 absolute bottom-12 left-3/4 -translate-x-2/4 hover:bg-sky-400 hover:text-slate-950 w-20 border-solid mx-8 my-2 border-sky-600 border-2" id='yu' onClick={()=>{
                         String(dialogs8[this.state.num2]) === dialogs8[this.state.num2]?document.getElementById('d').innerHTML = dialogs8[this.state.num2]:(dialogs8[this.state.num2])()
-                        if(this.state.num2 < 10){
+                        if(this.state.num2 < 17){
                           this.setState({num2: this.state.num2 + 1})
                           }else{
                             this.setState({num2: this.state.num2})
                           }
+                        if(this.state.num2 == 4){
+                          this.setState({im: 'no'})
+                        }
+                        if(this.state.num2 == 10){
+                          this.setState({im: ''})
+                        }
                       }}>{'>'}</button>
-                     <button onClick={()=>{ this.setState({sup: 'go',im: 'kl'})}}
-                      className="bg-blue-950 absolute -bottom-96 left-2/4 -translate-x-2/4 hover:bg-sky-400 hover:text-slate-950 w-20 border-solid mx-8 my-2 border-sky-600 border-2" id='ol'>GO!!</button>
+                     <button onClick={()=>{ this.setState({set: 'credits'})}}
+                      className="bg-blue-950 absolute -bottom-96 left-2/4 -translate-x-2/4 hover:bg-sky-400 hover:text-slate-950 w-20 border-solid mx-8 my-2 border-sky-600 border-2" id='ol'>finish</button>
                 </div>
           </div>
         )
@@ -368,7 +380,7 @@ export default class Ho extends Component{
       case 'credits':
         return (
           <div>
-            <div id="cred">
+            <div id="cred" >
               <h1 className='text-center'>credit goes to</h1>
               <h2 className='text-center'>game developer ... salim abdu</h2>
               <h2 className='text-center'>scripting  ... salim abdu</h2>
@@ -377,8 +389,8 @@ export default class Ho extends Component{
               <h2 className='text-center'>gojo as . ... gojo</h2>
               <h2 className='text-center'>beacon as ... beacon</h2>
               <h2 className='text-center'>player as  .... {name2}{this.state.pro4}</h2>
-              <h1 className='text-center'>and at last we all wish u a happy birth day</h1>
-              
+              <h1 className='text-center text-2xl'>and at last we all wish u a happy birth day</h1>
+              <a className='text-center text-blue-900' href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'>click to take your prize for finishing the game</a>
             </div>
           </div>
         )
