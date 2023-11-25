@@ -12,7 +12,7 @@ export default class Ho extends Component{
   constructor(props){
       super(props)
       this.state = {
-        set: 'suprize', //was true
+        set: 'suprise', //was true
         pro1: '',
         pro2: '',
         pro4: '',
