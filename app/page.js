@@ -257,6 +257,15 @@ export default class Ho extends Component{
                 </div> 
           </div>
         )
+      case 'yoko p2':
+        return (
+           <div className="bg-jjkbg2 bg-center bg-no-repeat h-screen bg-cover">
+            {this.state.im == 'kl'? <><Yi lo={()=>{this.setState({set: "lost"})}} ko={()=>{
+              document.getElementById('c').setAttribute('class', this.state.dialog)
+              this.setState({set: 'yoko d',yoko: 'clear',num2: 0})
+              }} /></>:<></>}
+          </div>
+        )
       case 'yoko d':
         return (
           <div className='bg-jjkbg3 bg-center bg-cover h-screen bg-no-repeat'>
@@ -374,7 +383,7 @@ export default class Ho extends Component{
         return (
           <div className='bg-jjkbg1 bg-center bg-cover h-screen bg-no-repeat'>
             <h1 className='text-center text-black font-bold'>YOU DIED</h1>
-              <div class="grid place-content-center"><button onClick={()=>this.setState({set: 'yoko p'})  document.getElementById('c').setAttribute('class', 'absolute z-2 select-none animate-[unshow_1s_ease-in-out] -bottom-96 left-2/4 -translate-x-2/4 w-3/4 backdrop-blur-lg rounded-t-xl border-indigo-950 p-5 shadow-inner shadow-indigo-950 border-4 h-44 border-solid ')} className='w-96 text-3xl shadow-blue-700 hover:bg-sky-400 hover:text-slate-950 object-none h-40 object-center shadow-xl rounded-lg bg-indigo-950 text-center'>restart from save</button></div>
+              <div class="grid place-content-center"><button onClick={()=>this.setState({set: 'yoko p2'})  document.getElementById('c').setAttribute('class', 'absolute z-2 select-none animate-[unshow_1s_ease-in-out] -bottom-96 left-2/4 -translate-x-2/4 w-3/4 backdrop-blur-lg rounded-t-xl border-indigo-950 p-5 shadow-inner shadow-indigo-950 border-4 h-44 border-solid ')} className='w-96 text-3xl shadow-blue-700 hover:bg-sky-400 hover:text-slate-950 object-none h-40 object-center shadow-xl rounded-lg bg-indigo-950 text-center'>restart from save</button></div>
           </div>
         )
       case 'lost2':
