@@ -4,8 +4,8 @@ export default class Yi2 extends Component {
     super(props);
     this.state = {
       clickCount: 0,
-      toWin: 100, 
-      timer: 80,
+      toWin: 90, 
+      timer: 90,
       btn: 0,
       pause: 'continue',
       winlose: ''
