@@ -261,8 +261,8 @@ export default class Ho extends Component{
         return (
            <div className="bg-jjkbg2 bg-center bg-no-repeat h-screen bg-cover">
             {this.state.im == 'kl'? <><Yi lo={()=>{this.setState({set: "lost"})}} ko={()=>{
-              document.getElementById('c').setAttribute('class', this.state.dialog)
               this.setState({set: 'yoko d',yoko: 'clear',num2: 0})
+              document.getElementById('c').setAttribute('class', this.state.dialog)
               }} /></>:<></>}
           </div>
         )
