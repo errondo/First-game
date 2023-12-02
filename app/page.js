@@ -311,7 +311,7 @@ export default class Ho extends Component{
         case 'kazu p':
           return (
             <div className='bg-jjkbg4 bg-center bg-no-repeat h-screen bg-cover'>
-               {this.state.im == 'kl'? <><Yi2 lo={()=>{this.setState({set: "lost"})}} ko={()=>{
+               {this.state.im == 'kl'? <><Yi2 lo={()=>{this.setState({set: "lost2"})}} ko={()=>{
               this.setState({set: 'choose2',kazu: 'clear',num2: 0})
               }} /></>:<></>}
             </div>
@@ -339,7 +339,7 @@ export default class Ho extends Component{
         return (
           <div>
             <div className='bg-jjkbg5 bg-center bg-no-repeat h-screen bg-cover'>
-               {this.state.im == 'kl'? <><Yi3 lo={()=>{this.setState({set: "lost"})}} ko={()=>{
+               {this.state.im == 'kl'? <><Yi3 lo={()=>{this.setState({set: "lost3"})}} ko={()=>{
               this.setState({set: 'suprise',kazu: 'clear',num2: 0})
               }} /></>:<></>}
             </div>
@@ -374,7 +374,21 @@ export default class Ho extends Component{
         return (
           <div className='bg-jjkbg1 bg-center bg-cover h-screen bg-no-repeat'>
             <h1 className='text-center text-black font-bold'>YOU DIED</h1>
-              <div class="grid place-content-center"><button className='w-96 text-3xl shadow-blue-700 hover:bg-sky-400 hover:text-slate-950 object-none h-40 object-center shadow-xl rounded-lg bg-indigo-950 text-center'>restart from save</button></div>
+              <div class="grid place-content-center"><button onClick={()=>this.setState({set: 'yoko p'})} className='w-96 text-3xl shadow-blue-700 hover:bg-sky-400 hover:text-slate-950 object-none h-40 object-center shadow-xl rounded-lg bg-indigo-950 text-center'>restart from save</button></div>
+          </div>
+        )
+      case 'lost2':
+        return (
+          <div className='bg-jjkbg1 bg-center bg-cover h-screen bg-no-repeat'>
+            <h1 className='text-center text-black font-bold'>YOU DIED</h1>
+              <div class="grid place-content-center"><button onClick={()=>this.setState({set: 'kazu p'})} className='w-96 text-3xl shadow-blue-700 hover:bg-sky-400 hover:text-slate-950 object-none h-40 object-center shadow-xl rounded-lg bg-indigo-950 text-center'>restart from save</button></div>
+          </div>
+        )
+      case 'lost3':
+        return (
+          <div className='bg-jjkbg1 bg-center bg-cover h-screen bg-no-repeat'>
+            <h1 className='text-center text-black font-bold'>YOU DIED</h1>
+              <div class="grid place-content-center"><button onClick={()=>this.setState({set: 'shibuya p'})} className='w-96 text-3xl shadow-blue-700 hover:bg-sky-400 hover:text-slate-950 object-none h-40 object-center shadow-xl rounded-lg bg-indigo-950 text-center'>restart from save</button></div>
           </div>
         )
       case 'credits':
