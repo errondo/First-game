@@ -412,7 +412,7 @@ export default class Ho extends Component{
               <h2 className='text-center'>gojo as . ... gojo</h2>
               <h2 className='text-center'>beacon as ... beacon</h2>
               <h2 className='text-center'>player as  .... {name2}{this.state.pro4}</h2>
-              <h1 className='text-center text-2xl'>and at last we all wish u a happy birth day</h1>
+              <h1 className='text-center text-2xl'>and at last congragulations on finishing the game</h1>
               <a className='text-center text-blue-900' href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'>click to take your prize for finishing the game</a>
             </div>
           </div>
